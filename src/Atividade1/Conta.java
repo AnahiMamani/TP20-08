@@ -11,17 +11,11 @@ public class Conta {
 		
 		
 	//INSTANCIA
-		public Conta (int numero, String titular, double saldo) {
-			this.nConta=numero;
+		public Conta (String titular, double saldo) {
 			this.titular=titular;
 			this.saldo=saldo;
-			
 			Conta.quanContas++;
 		}
-		public Conta() {
-			Conta.quanContas++;
-		}
-		
 		
 	//SET AND GET
 		//nConta
