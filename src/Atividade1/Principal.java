@@ -4,6 +4,7 @@ public class Principal {
 	 
 	public static void main(String[] args) {
 		Conta c = new Conta("C", 200);
+		
 		Conta a = new Conta("A", 200);
 		Conta b = new Conta("B", 200);
 
@@ -44,6 +45,9 @@ public class Principal {
 				case 3:{
 						System.out.print("---------------TRANSFERIR---------------\nValor que deseja Transferir:");
 						double v = sc.nextDouble();
+						System.out.print("Conta destino:");
+						String destino = sc.next();
+						
 							if(c.transferir(b, v)) {
 								System.out.print("\n  Tranferencia efetuado com sucesso!");	
 							}else {
